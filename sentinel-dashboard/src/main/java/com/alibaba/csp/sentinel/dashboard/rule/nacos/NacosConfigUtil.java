@@ -15,16 +15,23 @@
  */
 package com.alibaba.csp.sentinel.dashboard.rule.nacos;
 
+
 /**
  * @author Eric Zhao
  * @since 1.4.0
  */
 public final class NacosConfigUtil {
 
+    //public static final String GROUP_ID = StringUtils.isEmpty(System.getProperty("NACOS_GROUP")) ? NacosConfigUtil.DEFAULT_GROUP_ID : System.getProperty("NACOS_GROUP");
+
+    //public static final String DEFAULT_GROUP_ID = "SENTINEL_GROUP";
+
     public static final String GROUP_ID = "SENTINEL_GROUP";
     
     public static final String FLOW_DATA_ID_POSTFIX = "-flow-rules";
+
     public static final String PARAM_FLOW_DATA_ID_POSTFIX = "-param-rules";
+
     public static final String CLUSTER_MAP_DATA_ID_POSTFIX = "-cluster-map";
 
     /**

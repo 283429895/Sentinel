@@ -55,6 +55,7 @@ public class NacosConfig {
         log.info("NacosConfig init");
         Properties properties = new Properties();
         properties.put(PropertyKeyConst.SERVER_ADDR, nacosPropertiesConfiguration.getServerAddr());
+        properties.put(PropertyKeyConst.ENDPOINT, nacosPropertiesConfiguration.getEndpoint());
         properties.put(PropertyKeyConst.NAMESPACE, nacosPropertiesConfiguration.getNamespace());
         properties.put(PropertyKeyConst.ACCESS_KEY, nacosPropertiesConfiguration.getAk());
         properties.put(PropertyKeyConst.SECRET_KEY, nacosPropertiesConfiguration.getSk());

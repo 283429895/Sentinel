@@ -41,6 +41,8 @@ public class FlowRuleNacosPublisher implements DynamicRulePublisher<List<FlowRul
     @Autowired
     private Converter<List<FlowRuleEntity>, String> converter;
 
+
+
     @Override
     public void publish(String app, List<FlowRuleEntity> rules) throws Exception {
         AssertUtil.notEmpty(app, "app name cannot be empty");

@@ -8,6 +8,8 @@ public class NacosPropertiesConfiguration {
 
     private String serverAddr = "127.0.0.1:9000";
 
+    private String endpoint;
+
     private String namespace;
 
     private String ak;
@@ -20,6 +22,14 @@ public class NacosPropertiesConfiguration {
 
     public void setServerAddr(String serverAddr) {
         this.serverAddr = serverAddr;
+    }
+
+    public String getEndpoint() {
+        return endpoint;
+    }
+
+    public void setEndpoint(String endpoint) {
+        this.endpoint = endpoint;
     }
 
     public String getNamespace() {
