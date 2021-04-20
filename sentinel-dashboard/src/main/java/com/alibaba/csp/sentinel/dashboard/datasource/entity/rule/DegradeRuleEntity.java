@@ -18,6 +18,7 @@ package com.alibaba.csp.sentinel.dashboard.datasource.entity.rule;
 import java.util.Date;
 
 import com.alibaba.csp.sentinel.slots.block.degrade.DegradeRule;
+import com.alibaba.csp.sentinel.slots.block.flow.ClusterFlowConfig;
 
 /**
  * @author leyou
@@ -37,6 +38,8 @@ public class DegradeRuleEntity implements RuleEntity {
     private Integer grade;
     private Date gmtCreate;
     private Date gmtModified;
+
+    private ClusterFlowConfig clusterConfig;
 
     public static DegradeRuleEntity fromDegradeRule(String app, String ip, Integer port, DegradeRule rule) {
         DegradeRuleEntity entity = new DegradeRuleEntity();
